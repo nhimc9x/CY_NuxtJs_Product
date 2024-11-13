@@ -8,18 +8,36 @@ importers:
 
   .:
     dependencies:
+      '@formkit/auto-animate':
+        specifier: ^0.8.2
+        version: 0.8.2
       '@heroicons/vue':
         specifier: ^2.1.5
         version: 2.1.5(vue@3.5.12(typescript@5.6.3))
+      '@pinia/nuxt':
+        specifier: ^0.7.0
+        version: 0.7.0(magicast@0.3.5)(rollup@4.25.0)(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       nuxt:
         specifier: ^3.14.159
         version: 3.14.159(@parcel/watcher@2.5.0)(@types/node@22.9.0)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(terser@5.36.0))
+      pinia-plugin-persistedstate:
+        specifier: ^4.1.3
+        version: 4.1.3(@pinia/nuxt@0.7.0(magicast@0.3.5)(rollup@4.25.0)(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(magicast@0.3.5)(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(rollup@4.25.0)
+      tailwind-merge:
+        specifier: ^2.5.4
+        version: 2.5.4
       vue:
         specifier: latest
         version: 3.5.12(typescript@5.6.3)
       vue-router:
         specifier: latest
         version: 4.4.5(vue@3.5.12(typescript@5.6.3))
+      vue-toast-notification:
+        specifier: ^3.1.3
+        version: 3.1.3(vue@3.5.12(typescript@5.6.3))
+      vue3-toastify:
+        specifier: ^0.2.4
+        version: 0.2.4(vue@3.5.12(typescript@5.6.3))
     devDependencies:
       autoprefixer:
         specifier: ^10.4.20
@@ -470,6 +488,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@formkit/auto-animate@0.8.2':
+    resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
+
   '@heroicons/vue@2.1.5':
     resolution: {integrity: sha512-IpqR72sFqFs55kyKfFS7tN+Ww6odFNeH/7UxycIOrlVYfj4WUGAdzQtLBnJspucSeqWFQsKM0g0YrgU655BEfA==}
     peerDependencies:
@@ -660,6 +681,9 @@ packages:
   '@parcel/watcher@2.5.0':
     resolution: {integrity: sha512-i0GV1yJnm2n3Yq1qw6QrUrd/LI9bE8WEBOTtOkpCXHHdyN3TAGgqAK/DAT05z4fq2x04cARXt2pDmjWjL92iTQ==}
     engines: {node: '>= 10.0.0'}
+
+  '@pinia/nuxt@0.7.0':
+    resolution: {integrity: sha512-IAKRl7mQCrFKQtD8Z6EzOz5bQ/px0FdeyaB+70A3igkFzHzKVJVblLCjFwXPBC/IO0EwHuMRk/SMgwkUn82jwg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1366,6 +1390,9 @@ packages:
     peerDependenciesMeta:
       supports-color:
         optional: true
+
+  deep-pick-omit@1.2.1:
+    resolution: {integrity: sha512-2J6Kc/m3irCeqVG42T+SaUMesaK7oGWaedGnQQK/+O0gYc+2SP5bKh/KKTE7d7SJ+GCA9UUE1GRzh6oDe0EnGw==}
 
   deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
@@ -2274,6 +2301,29 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
+  pinia-plugin-persistedstate@4.1.3:
+    resolution: {integrity: sha512-5Rad7oSoEh0na+j4jEViVQMtAYE38KjU7ixKc+am33QX/clJ1mb19zTZqMJXvq+PnQW7uuEuL33Q6NL0GbkfWw==}
+    peerDependencies:
+      '@pinia/nuxt': '>=0.5.0'
+      pinia: '>=2.0.0'
+    peerDependenciesMeta:
+      '@pinia/nuxt':
+        optional: true
+      pinia:
+        optional: true
+
+  pinia@2.2.6:
+    resolution: {integrity: sha512-vIsR8JkDN5Ga2vAxqOE2cJj4VtsHnzpR1Fz30kClxlh0yCHfec6uoMeM3e/ddqmwFUejK3NlrcQa/shnpyT4hA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.5.11
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
@@ -2781,6 +2831,9 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
+  tailwind-merge@2.5.4:
+    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
+
   tailwindcss@3.4.14:
     resolution: {integrity: sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA==}
     engines: {node: '>=14.0.0'}
@@ -3089,6 +3142,17 @@ packages:
   vue-bundle-renderer@2.1.1:
     resolution: {integrity: sha512-+qALLI5cQncuetYOXp4yScwYvqh8c6SMXee3B+M7oTZxOgtESP0l4j/fXdEJoZ+EdMxkGWIj+aSEyjXkOdmd7g==}
 
+  vue-demi@0.14.10:
+    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
 
@@ -3096,6 +3160,21 @@ packages:
     resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
       vue: ^3.2.0
+
+  vue-toast-notification@3.1.3:
+    resolution: {integrity: sha512-XNyWqwLIGBFfX5G9sK+clq3N3IPlhDjzNdbZaXkEElcotPlWs0wWZailk1vqhdtLYT/93Y4FHAVuzyatLmPZRA==}
+    engines: {node: '>=12.15.0'}
+    peerDependencies:
+      vue: ^3.0
+
+  vue3-toastify@0.2.4:
+    resolution: {integrity: sha512-BMOwmoT0HKPYs2mEfsehitS3Kz8YjdsSAgHABba+eT573XLgzdHSOerdZ2KvPB1ldbTqnJ6AIfTM8TmBxg+Clw==}
+    engines: {node: '>=20', npm: '>=9.0.0'}
+    peerDependencies:
+      vue: '>=3.2.0'
+    peerDependenciesMeta:
+      vue:
+        optional: true
 
   vue@3.5.12:
     resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
@@ -3530,6 +3609,8 @@ snapshots:
   '@esbuild/win32-x64@0.24.0':
     optional: true
 
+  '@formkit/auto-animate@0.8.2': {}
+
   '@heroicons/vue@2.1.5(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       vue: 3.5.12(typescript@5.6.3)
@@ -3887,6 +3968,19 @@ snapshots:
       '@parcel/watcher-win32-arm64': 2.5.0
       '@parcel/watcher-win32-ia32': 2.5.0
       '@parcel/watcher-win32-x64': 2.5.0
+
+  '@pinia/nuxt@0.7.0(magicast@0.3.5)(rollup@4.25.0)(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))':
+    dependencies:
+      '@nuxt/kit': 3.14.159(magicast@0.3.5)(rollup@4.25.0)
+      pinia: 2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - magicast
+      - rollup
+      - supports-color
+      - typescript
+      - vue
+      - webpack-sources
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -4634,6 +4728,8 @@ snapshots:
       ms: 2.1.3
     optionalDependencies:
       supports-color: 9.4.0
+
+  deep-pick-omit@1.2.1: {}
 
   deepmerge@4.3.1: {}
 
@@ -5696,6 +5792,29 @@ snapshots:
 
   pify@2.3.0: {}
 
+  pinia-plugin-persistedstate@4.1.3(@pinia/nuxt@0.7.0(magicast@0.3.5)(rollup@4.25.0)(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(magicast@0.3.5)(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(rollup@4.25.0):
+    dependencies:
+      '@nuxt/kit': 3.14.159(magicast@0.3.5)(rollup@4.25.0)
+      deep-pick-omit: 1.2.1
+      defu: 6.1.4
+      destr: 2.0.3
+    optionalDependencies:
+      '@pinia/nuxt': 0.7.0(magicast@0.3.5)(rollup@4.25.0)(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+      pinia: 2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - webpack-sources
+
+  pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.12(typescript@5.6.3)
+      vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.3))
+    optionalDependencies:
+      typescript: 5.6.3
+
   pirates@4.0.6: {}
 
   pkg-types@1.2.1:
@@ -6209,6 +6328,8 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
+  tailwind-merge@2.5.4: {}
+
   tailwindcss@3.4.14:
     dependencies:
       '@alloc/quick-lru': 5.2.0
@@ -6547,11 +6668,23 @@ snapshots:
     dependencies:
       ufo: 1.5.4
 
+  vue-demi@0.14.10(vue@3.5.12(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
+
   vue-devtools-stub@0.1.0: {}
 
   vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
+      vue: 3.5.12(typescript@5.6.3)
+
+  vue-toast-notification@3.1.3(vue@3.5.12(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
+
+  vue3-toastify@0.2.4(vue@3.5.12(typescript@5.6.3)):
+    optionalDependencies:
       vue: 3.5.12(typescript@5.6.3)
 
   vue@3.5.12(typescript@5.6.3):

@@ -15,18 +15,28 @@ export const routes = [
         file: '~/custom-pages/product/index.vue'
     },
     {
+        name: 'product_detail',
+        path: '/product/:id',
+        file: '~/custom-pages/product/productDetail/index.vue'
+    },
+    {
         name: 'cart',
         path: '/cart',
-        file: '~/custom-pages/product/cart.vue'
+        file: '~/custom-pages/cart/index.vue'
     },
     {
         name: 'checkout',
         path: '/checkout',
-        file: '~/custom-pages/product/checkout.vue'
+        file: '~/custom-pages/checkout/index.vue'
     },
     {
-        name: 'orders',
-        path: '/orders',
-        file: '~/custom-pages/product/orders.vue'
+        name: 'order',
+        path: '/order',
+        file: '~/custom-pages/order/index.vue'
+    },
+    {
+        name: 'profile',
+        path: '/profile',
+        file: '~/custom-pages/profile/index.vue'
     }
 ]

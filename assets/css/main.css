@@ -7,10 +7,10 @@
     @apply box-border
 }
 html {
-    @apply font-poppins text-[16px];
+    @apply font-poppins sm:text-[16px] text-[14px];
 }
 .wrapper {
-    @apply max-w-screen-xl mx-auto w-full px-12;
+    @apply max-w-screen-xl mx-auto w-full xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4;
 }
 .img-cover {
     @apply w-full h-full object-cover;

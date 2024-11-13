@@ -10,10 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@heroicons/vue": "^2.1.5",
+    "@pinia/nuxt": "^0.7.0",
     "nuxt": "^3.14.159",
+    "pinia-plugin-persistedstate": "^4.1.3",
+    "tailwind-merge": "^2.5.4",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-toast-notification": "^3.1.3",
+    "vue3-toastify": "^0.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
